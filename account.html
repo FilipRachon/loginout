@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Konto</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <script type="text/javascript">
+    current_page = 'account.html'
+  </script>
+</head>
+<body>
+	<nav>
+    <a href="index.html" class="logo">STRONA GŁÓWNA</a>
+    <div class="nav-items">
+      <a href="info.html">Kontakt</a>
+    </div>
+	</nav>
+  <main class="forms-area">
+    <div class="forms-login">
+      <form id="form_login" method="post">
+        <h1>Zaloguj się:</h1>
+        <div>
+        <label for="login_username">Imię:</label>
+        <input type="text" id="login_username" name="login_username" placeholder="Jan">
+        </div>
+        <div>
+        <label for="login_password">Hasło:</label>
+        <input type="password" id="login_password" name="login_password">
+        </div>
+        <br>
+        <button type="submit" id="login">Zaloguj</button>
+        <br>
+        <p id="login_error"></p>
+      </form>
+    </div>
+    <div class="forms-register">
+      <form id="form_register" method="post">
+        <h1>Nie masz konta? Zarejestruj się:</h1>
+        <div>
+        <label for="register_firstname">Imię:</label>
+        <input type="text" id="register_firstname" name="register_firstname" placeholder="Jan">
+        </div>
+        <div>
+        <label for="register_lastname">Nazwisko:</label>
+        <input type="text" id="register_lastname" name="register_lastname" placerholder="Kowalski">
+        </div>
+        <div>
+        <label for="register_email">Adres e-mail:</label>
+        <input type="text" id="register_email" name="register_email" placerholder="j.kowalski@portal">
+        </div>
+        <div>
+        <label for="register_username">Nazwa użytkownika:</label>
+        <input type="text" id="register_username" name="register_username">
+        </div>
+        <div>
+        <label for="register_password">Hasło:</label>
+        <input type="password" id="register_password" name="register_password">
+        </div>
+        <br>
+        <button type="submit" id="register">Utwórz konto</button>
+        <br>
+        <p id="form_error"></p>
+      </form>
+    </div>
+  <form id="form_logout" method="post">
+    <p id="user_information"></p>
+    <button type="submit" id="logout">Wyloguj</button>
+  </form>
+  </main>
+  <footer>
+    &copy; Filip Rachoń 4.6/11
+  </footer>
+	
+  <script src="js/account.js"></script>
+</body>
+</html>
